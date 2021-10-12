@@ -8,9 +8,7 @@
   #### Marco Aurelio Hoegen Martins 10723711
   #### Matheus Barbosa 10687792
  
-### Aqui teremos todos os arquivos e documentação do projeto
- 
-### Arquivos bases e links importantes:
+### Links importantes:
 
   #### https://medium.com/hackernoon/generating-music-using-markov-chains-40c3f3f46405
   #### https://github.com/omgimanerd/markov-music/
