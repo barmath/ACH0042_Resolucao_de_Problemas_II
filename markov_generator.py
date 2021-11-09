@@ -22,27 +22,20 @@ def create_markov(paste, n_music, name_of_out = 'out'):
     return final_markov
 
 if __name__ == "__main__":
-
+    
     # Gênero disco
     
     final_disc = create_markov('genre_disco', 5, 'out_disco' )
     
     # Gênero reggae
     
-    final_disc = create_markov('genre_reggae', 6, 'out_reggae' )
+    final_reggae = create_markov('genre_reggae', 6, 'out_reggae' )
     
     # Gênero classico
     
     final_classic = create_markov('genre_classic', 5, 'out_classic')
+   
+    # Teste com apenas 1 música
     
-    # Teste com apenas 1 música várias vezes
-    
-    final_yiruma = MarkovChain()
-    
-    for v in range(10000):
-        chain_yiruma = Parser2(r'genre_yiruma\4.mid').get_chain()
-        final_yiruma.merge(chain_yiruma)
-    
-    Generator.load(final_yiruma).generate(f'saidas_markov\out_yiruma.mid')
-    
+    final_yiruma = create_markov('genre_yiruma', 1, 'out_yiruma')
     
